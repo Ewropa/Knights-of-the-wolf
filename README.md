@@ -1,4 +1,4 @@
-﻿#Аlone at home #
+﻿#Knights of the wolf#
 
 <p align="center">
   <img src="http://images.vfl.ru/ii/1520318403/deff4828/20843386.jpg">
@@ -9,7 +9,7 @@
 
 ### Введение. ###
 
-Alone at home - эксперементальный багтрек, пока что с ним делать не решил
+Knights of the wolf - World of Warcraft: Cataclysm
 
 ### Размышляю все над этим ###
 

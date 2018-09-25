@@ -1,1 +1,0 @@
-UPDATE `creature_addon` SET `mount` = 0 WHERE `guid` = 370857;
