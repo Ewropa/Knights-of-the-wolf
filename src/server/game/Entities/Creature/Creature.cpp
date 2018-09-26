@@ -400,10 +400,13 @@ bool Creature::InitEntry(uint32 entry, CreatureData const* data /*= nullptr*/)
     if (!data || data->equipmentId == 0)
         LoadEquipment(); // use default equipment (if available)
     else                // override, 0 means no equipment
+	if (data && data->equipmentId != 0)
     {
         m_originalEquipmentId = data->equipmentId;
         LoadEquipment(data->equipmentId);
     }
+	else
+		LoadEquipment(0, true);
 
     SetName(normalInfo->Name);                              // at normal entry always
 
