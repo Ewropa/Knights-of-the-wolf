@@ -375,8 +375,11 @@ class npc_eye_of_acherus : public CreatureScript
             npc_eye_of_acherusAI(Creature* creature) : ScriptedAI(creature)
             {
                 me->SetDisplayId(me->GetCreatureTemplate()->Modelid1);
-                if (Player* owner = me->GetCharmerOrOwner()->ToPlayer())
-                    owner->SendAutoRepeatCancel(me);
+				if (Player* owner = me->GetCharmerOrOwner()->ToPlayer())
+				{
+					me->GetCharmInfo()->InitPossessCreateSpells();
+					owner->SendAutoRepeatCancel(me);
+				}
 
                 me->SetReactState(REACT_PASSIVE);
 
